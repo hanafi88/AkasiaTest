@@ -50,7 +50,7 @@ namespace BusinessLogic.Services
                     sExc = x.InnerException.Message;
                 }
 
-                sResult = $"Exception Exception found. \nInnerExc: {sExc},\nMessage: {x.Message}";
+                sResult = $"Exception found. \nInnerExc: {sExc},\nMessage: {x.Message}";
             }
 
             return sResult;
