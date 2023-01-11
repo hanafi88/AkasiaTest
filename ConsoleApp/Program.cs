@@ -1,10 +1,8 @@
 ﻿// See https://aka.ms/new-console-template for more information
-using ConsoleApp.BusinessLogic;
-int iMaxLoop = 100;
+using BusinessLogic.Services;
 
-for (int i = 1; i <= iMaxLoop; i++)
-{
-    Console.WriteLine(CommonFuntion.WriteFizzBuzzLogic(i));
-}
+int iMaxLoop = 100;
+IFizzBuzzService buzzService = new FizzBuzzService(iMaxLoop);
+buzzService.Write();
 
 Console.ReadLine();
